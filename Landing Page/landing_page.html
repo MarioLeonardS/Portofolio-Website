@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing Page Bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap CSS v5-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="landingcss.css" />
+  </head>
+
+  <body class="bg-black">
+    <header>
+      <!-- place navbar here -->
+      <nav
+        class="navbar navbar-expand-lg bg-dark bg-opacity-50 position-fixed w-100 p-lg-3 justify-content-center shadow z-3"
+        id="navbar"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand me-lg-4" href="#"
+            ><span class="text-info">P</span>IXEL<span class="text-warning"
+              >C</span
+            ><span style="color: rgb(17, 207, 17)">S</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section id="hero" class="d-flex vw-100 vh-100 justify-content-center">
+        <video class="opacity-75" id="background-video" autoplay loop muted>
+          <source src="img/videoplayback.mp4" type="video/mp4" />
+        </video>
+        <div
+          id="hero-title"
+          class="text-white d-flex flex-column justify-content-center"
+        >
+          <div class="mb-3 text-center text-white border-bottom border-4">
+            <h1 class="mb-1">
+              <span class="text-info">P</span>IXEL<span class="text-warning"
+                >C</span
+              ><span style="color: rgb(17, 207, 17)">S</span>
+            </h1>
+          </div>
+          <div class="text-center m-0 text-white">
+            <p>
+              <span class="text-info">Pixel Art</span>,
+              <span class="text-warning">Cinematic Art</span>,
+              <span style="color: rgb(21, 230, 21)">Games Art</span>
+            </p>
+            <button
+              type="button"
+              class="btn btn-black border-white border-2 me-4 text-white"
+              id="btn-hero"
+            >
+              Click Here!
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-dark border-white border-2 text-white"
+              id="btn-hero"
+            >
+              More Info!
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

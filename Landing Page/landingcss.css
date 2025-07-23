@@ -1,0 +1,40 @@
+* {
+  font-family: "Pixelify Sans", sans-serif;
+}
+
+.container {
+  filter: blur(5px);
+}
+
+.navbar-brand {
+  color: white;
+}
+
+.navbar-brand:hover {
+  color: white;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+#background-video {
+  object-fit: cover;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  position: fixed;
+  z-index: -9 !important;
+}
+
+#hero-title {
+  top: 36vh !important;
+}
+
+#hero-title .border-bottom {
+  border-color: rgb(218, 18, 18) !important;
+}
+
+#btn-hero:hover {
+  background-color: rgb(70, 127, 233);
+}
