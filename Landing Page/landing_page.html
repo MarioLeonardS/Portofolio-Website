@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Landing Page Bootstrap</title>
+    <title>Pixelcs</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -17,9 +17,28 @@
     <!-- Bootstrap CSS v5-->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="landingcss.css" />
+    <!-- Favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon_io (1)/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io (1)/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io (1)/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
   </head>
 
-  <body class="bg-black">
+  <body class="overflow-x-hidden bg-dark">
     <header>
       <!-- place navbar here -->
       <nav
@@ -49,7 +68,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#sec-2">About</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -59,11 +78,17 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Feature
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="index.html" target="_blank"
+                      >Landing Page 1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#sec-3">100+ Images</a>
+                  </li>
                   <li><hr class="dropdown-divider" /></li>
                   <li>
                     <a class="dropdown-item" href="#">Something else here</a>
@@ -78,8 +103,11 @@
     <main>
       <!-- Hero Section -->
       <section id="hero" class="d-flex vw-100 vh-100 justify-content-center">
-        <video class="opacity-75" id="background-video" autoplay loop muted>
-          <source src="img/videoplayback.mp4" type="video/mp4" />
+        <video id="background-video" autoplay loop muted>
+          <source
+            src="img/autumn-river-pixel-moewalls-com.mp4"
+            type="video/mp4"
+          />
         </video>
         <div
           id="hero-title"
@@ -94,25 +122,68 @@
           </div>
           <div class="text-center m-0 text-white">
             <p>
+              Get's Free
               <span class="text-info">Pixel Art</span>,
               <span class="text-warning">Cinematic Art</span>,
               <span style="color: rgb(21, 230, 21)">Games Art</span>
+              Images
             </p>
+
             <button
               type="button"
-              class="btn btn-black border-white border-2 me-4 text-white"
+              class="btn btn-outline-warning"
               id="btn-hero"
+              onclick="window.location.href='#sec-2';"
             >
-              Click Here!
-            </button>
-            <button
-              type="button"
-              class="btn btn-outline-dark border-white border-2 text-white"
-              id="btn-hero"
-            >
-              More Info!
+              Get Art >>
             </button>
           </div>
+        </div>
+      </section>
+      <!-- Section 2 -->
+      <section class="d-flex vw-100 vh-100" id="sec-2">
+        <div class="text-sec2 position-relative">
+          <h1 class="ms-3 mb-1 title-sec2">Get's Your Pixel Art Image</h1>
+          <p class="description-sec2 mb-1 ph-text-align-justify">
+            Easily create and customize your very own pixel art image with just
+            a few clicks! Our pixel art image gives you the freedom to bring
+            your retro-inspired ideas to life in a fun and simple way.
+          </p>
+          <a href="https://moewalls.com/" target="_blank">
+            <button type="button" class="btn border-2" id="btn-sec2">
+              Let's Go!
+            </button>
+          </a>
+        </div>
+        <div class="img-pixel text-center">
+          <video
+            id="vid-pixel"
+            class="align-self-center border"
+            autoplay
+            loop
+            muted
+          >
+            <source src="img/pixel.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </section>
+      <!-- Sec-3 -->
+      <section id="sec-3" class="d-flex vw-100 vh-100 flex-column mt-5">
+        <div class="text-center mb-5">
+          <h1 class="title-sec3">100+ Images Free For You!</h1>
+        </div>
+        <div class="container-img d-flex mt-3 justify-content-center">
+          <div class="img-0 rounded-3"></div>
+          <div class="img-1 rounded-3"></div>
+          <div class="img-2 rounded-3"></div>
+          <div class="img-3 rounded-3"></div>
+          <div class="img-4 rounded-3"></div>
+          <!-- Duplikasi -->
+          <div class="img-0 rounded-3"></div>
+          <div class="img-1 rounded-3"></div>
+          <div class="img-2 rounded-3"></div>
+          <div class="img-3 rounded-3"></div>
+          <div class="img-4 rounded-3"></div>
         </div>
       </section>
     </main>
